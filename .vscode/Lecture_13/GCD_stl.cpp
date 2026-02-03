@@ -9,6 +9,8 @@ int main()
     int d = INT_MIN;
     int a = 5;
     int b = 10;
-    cout<<__gcd(a,b);
+    cout<<__gcd(a,b)<<endl;
+    cout<<c;
+    cout<<d;
    return 0;
 }
