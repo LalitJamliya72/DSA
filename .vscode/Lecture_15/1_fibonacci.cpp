@@ -10,6 +10,6 @@ int main()
 {
     int n;
     cin>>n;
-    cout<<fibbo(n);
+    cout<<fibbo(n)<<endl;
    return 0;
 }
