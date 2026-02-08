@@ -28,7 +28,7 @@ int main()
 {
     greet();
     great("Lalit");
-    cout << sub()<<endl;
+    cout << sub() << endl;
     cout << add(8, 2);
     return 0;
 }
