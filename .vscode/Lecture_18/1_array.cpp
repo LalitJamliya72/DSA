@@ -1,41 +1,45 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
-// create 
-// first way
-int arr[5]; 
+    // create
+    // first way
+    int arr[5];
 
-// second way
-arr[0]=1;
-arr[1]=1;
-arr[2]=1;
-arr[3]=1;
-arr[4]=1;
-int arr_b[]={1,2,3,4,5};
+    // second way
+    arr[0] = 1;
+    arr[1] = 1;
+    arr[2] = 1;
+    arr[3] = 1;
+    arr[4] = 1;
+    int arr_b[] = {1, 2, 3, 4, 5};
 
-// third way
-int n;
-cin>>n;
-int arr_c[n];
+    // third way
+    int n;
+    cin >> n;
+    int arr_c[n];
 
-// read
-int s = sizeof(arr_b)/sizeof(int) ;
-for(int i=0;i<s;i++){
-    cout<<arr_b[i]<<" ";
-}
-cout<<endl;
-for(int i=0;i<s;i++){
-    cout<<arr[i]<<" ";
-}
+    // read
+    int s = sizeof(arr_b) / sizeof(int);
+    for (int i = 0; i < s; i++)
+    {
+        cout << arr_b[i] << " ";
+    }
+    cout << endl;
+    for (int i = 0; i < s; i++)
+    {
+        cout << arr[i] << " ";
+    }
 
-// update
-for(int i=0;i<s;i++){
-    arr[i]+=i;
-}
-cout<<endl;
-for(int i=0;i<s;i++){
-    cout<<arr[i]<<" ";
-}
-  return 0;
+    // update
+    for (int i = 0; i < s; i++)
+    {
+        arr[i] += i;
+    }
+    cout << endl;
+    for (int i = 0; i < s; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    return 0;
 }
