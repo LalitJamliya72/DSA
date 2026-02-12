@@ -14,8 +14,8 @@ int main()
         for(int j=i;j<=n;j++){
             if(j!=0){
             cout<<j<<" ";
-            }
         }
+    }
         cout<<endl;
     }
     for(int i=1;i<=n;i++){
@@ -27,10 +27,8 @@ int main()
         }
         for(int j=i;j<=n;j++){
             cout<<j<<" ";
-            }
+    }
         cout<<endl;
     }
-
-
    return 0;
 }

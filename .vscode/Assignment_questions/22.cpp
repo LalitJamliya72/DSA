@@ -16,10 +16,10 @@ int main()
             cout<<j<<" ";
         }
     }
-        else{
-            for(int j=n-1;j>=1;j--){
-                cout<<j<<" ";
-            }
+    else{
+        for(int j=n-1;j>=1;j--){
+            cout<<j<<" ";
+        }
     }
         cout<<endl;
     }
