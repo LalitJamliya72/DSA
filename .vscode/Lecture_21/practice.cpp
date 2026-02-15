@@ -1,18 +1,28 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
-    int n1,n2;
-    cin>>n1>>n2;
-     int n = 1;
-    int count = 0;
-    while(count<n1){
-        int a = 3*n+2;
-        if(a%n2!=0){
-            cout<<a<<endl;
-            count++;
+    long long n;
+    cin >> n;
+    long k = 0;
+    long s = 0;
+    while (n > 0)
+    {
+        int digit = n % 10;
+        if (digit == 0)
+        {
+            digit = 5;
         }
-        n++;
+        k = k * 10 + digit;
+        n /= 10;
     }
-   return 0;
+    while (k > 0)
+    {
+        long d = k % 10;
+        s = s * 10 + d;
+        k /= 10;
+    }
+    cout << s << endl;
+
+    return 0;
 }
