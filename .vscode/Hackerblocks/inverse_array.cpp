@@ -14,6 +14,9 @@ int main() {
     int n;
     cin>>n;
     vector<int> number=convert(n);
+    for(int i=0;i<n;i++){
+        cin>>number[i];
+    }
     vector<int> ans(number.size()+1);
     for(int i=0;i<number.size();i++){
         ans[number[i]]=i+1;
