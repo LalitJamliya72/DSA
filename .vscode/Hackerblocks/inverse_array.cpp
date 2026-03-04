@@ -19,7 +19,7 @@ int main() {
     }
     vector<int> ans(num.size()+1);
     for(int i=0;i<num.size();i++){
-        ans[num[i]]=i+1;
+        ans[num[i]]=i;
     }
     for(int i=num.size();i>=1;i--){
         cout<<ans[i];
