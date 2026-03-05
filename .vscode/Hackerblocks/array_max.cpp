@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<climits>
 using namespace std;
 int main()
 {
@@ -9,12 +10,12 @@ int main()
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    vector<int> ans(n);
+    int ans = INT_MIN;
     for(int i=0;i<n;i++){
-        ans[arr[i]]=i;
+        if(ans<arr[i]){
+            ans=arr[i];
+        }
     }
-    for(int i=0;i<n;i++){
-        cout<<ans[i]<<" ";
-    }
+    cout<<ans<<endl;
    return 0;
 }

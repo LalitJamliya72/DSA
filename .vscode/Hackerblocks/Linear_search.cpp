@@ -9,12 +9,14 @@ int main()
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    vector<int> ans(n);
+    int m;
+    cin>>m;
+    int index = -1;
     for(int i=0;i<n;i++){
-        ans[arr[i]]=i;
+        if(arr[i]==m){
+            index=i;
+        }
     }
-    for(int i=0;i<n;i++){
-        cout<<ans[i]<<" ";
-    }
+     cout<<index<<endl;
    return 0;
 }
