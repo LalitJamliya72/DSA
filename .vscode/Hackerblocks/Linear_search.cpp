@@ -1,22 +1,25 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 using namespace std;
 int main()
 {
     int n;
-    cin>>n;
+    cin >> n;
     vector<int> arr(n);
-    for(int i=0;i<n;i++){
-        cin>>arr[i];
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
     }
     int m;
-    cin>>m;
+    cin >> m;
     int index = -1;
-    for(int i=0;i<n;i++){
-        if(arr[i]==m){
-            index=i;
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] == m)
+        {
+            index = i;
         }
     }
-     cout<<index<<endl;
-   return 0;
+    cout << index << endl;
+    return 0;
 }
