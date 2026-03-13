@@ -1,0 +1,12 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main()
+{
+    int a;
+    int b;
+    cin>>a;
+    cin>>b;
+    cout<<__gcd(a,b);
+   return 0;
+}
