@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    int vector<int> arr;
+    vector<int> arr;
     int n,m;
     cin>>n>>m;
     vector<vector<int> a(n,vector<int>(m));
